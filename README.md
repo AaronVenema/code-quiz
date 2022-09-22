@@ -2,7 +2,8 @@
 
 Respository link: https://github.com/AaronVenema/code-quiz
 Deployment link:https://aaronvenema.github.io/code-quiz/
-image.png
+![codequiz](https://user-images.githubusercontent.com/34764586/191810180-14586516-4f50-45e0-84a3-366ab50e0986.png)
+
 
 This 04-challenge- code quiz is an introduction to javascript. Students deploy a web page that is responsible for generating a mutliple choice quiz that is time based. For each wrong answer, the user loses 5 seconds of time. If the user runs out of time before completing the quiz they must start over. At the end of the quiz users input their initials/name to save a local highscore. This can be viewed from main screen and cleared from the main screen. 
 
