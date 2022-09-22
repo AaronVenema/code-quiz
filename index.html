@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+<header>
+</header>
 <body>
-    
+    <div id="title"></div>
+        <h1 id="question"></h1>
+        <ul>
+            <li> 
+                <input type="radio" id="a" name="answers" class="answers">
+                <label for="a" id="a+"></label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="answers" class="answers">
+                <label for="b" id="b+"></label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="answers" class="answers">
+                <label for="c" id="c+"></label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="answers" class="answers">
+                <label for="d" id="d+"></label>
+            </li>
+            <li>
+                <button class="btn" id="submit" value="submit">Submit</button>
+            </li>
+            <li>
+                <div class= "card timer">
+                    <div class = "timer-text">60</div>
+                    <div class="large-font timer-count"></div>
+                </div>
+            </li>
+        </ul>
+        
+    <section>
+        <h3>Directions</h3>
+            <div id="directions">
+                <p> click answer you think is correct, at end of quiz enter your intitals to save score.</p>
+            </div>
+    </section>
 </body>
+<script src="./assets/script/script.js"></script>
 </html>
+
