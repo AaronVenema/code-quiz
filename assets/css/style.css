@@ -1,78 +1,139 @@
 
-* {
-    margin: 0;
-    padding: 20px;
-}
-body {
-    font-family: sans-serif;
-    color:#000000ff;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #000000ff;
-    text-align: center;
-}
-#title {
-    font-size: 30px;
-    font-family: bold;
-    color: #ffffffff;
-}
-
-.answers {
-    font-size: 25px;
-    font-family: bold;
-    color: #ffffffff;
-}
-h1 {
-    color:#ffffffff;
-    font-size: 40px;
-    align-items: center;
-}
-h2 {
-    justify-content: space-around;
-    font-family: impact;
-    font-size: 30px;
-    color:#ffffffff;
-}
-h3 {
-    text-align: center;
-    font-family: Bold;
-    font-size: 30px;
-    color:#ffffffff;
-}
-p {
-    color:#ffffffff;
-    font-size: 25px;
-    font-family: bold;
-}
-
-button {   
-    font-family: impact;
-    font-size: 30px;
-    max-width: 40%;
-    background-color: #fca311ff;
-    padding: 10px;
-}
-li {
-    width:100%;
-    color:#ffffffff;
-    list-style: none;
-}
-div { 
-    text-align: center;
-    font-family: Bold;
-    font-size: 30px;
-    color:#ffffffff;
-    width:100%;
-}
-
-
-
-
-/* color scheme */
 
 /* $black: #000000ff;
 $oxford-blue: #14213dff;
 $orange-web: #fca311ff;
 $platinum: #e5e5e5ff;
-$white: #ffffffff; */
+$white: #ffffffff; */ 
+
+*{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin:0;
+    padding:0;
+    background-color: #000000ff;
+    }
+    
+    li{
+        font-family: impact;
+        font-size: 20px;
+        color:#fca311ff;
+        list-style-type: none;
+    }
+    
+    p{
+        color: #ffffffff;
+        text-align: center;
+        font-size: 30px;
+        font-family: bold;
+    
+    }
+    h2{
+        font-family: impact;
+        font-size: 20px;
+        color:#fca311ff;
+    }
+    input{
+        text-align: center;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      button {
+        display: block;
+        font-family: bold;
+        background-color: #e5e5e5ff;
+        border-radius: 10px;
+        border: 3px double #fca311ff;
+        color: #000000ff;
+        text-align: center;
+        font-size: 25px;
+      }
+    #startpage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #timer{
+        font-family: sans-serif;
+        background-color: #fca311ff;
+        color: #14213dff;
+        font-size: 30px;
+        text-align: center;
+    }
+    #quiz {
+        display: none;
+    }
+    
+    #result {
+        display: none;
+    }
+    
+    #gameover {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #highScore{
+        height: 1.5rem;
+        border: groove 2px;
+    }
+    
+    #hsPg{
+        display: none;
+        border: solid;
+        background: #e5e5e5ff;
+    }
+    
+    #hs-header{
+        display:flex;
+        justify-content: space-around;
+        background-color: #000000ff;
+        color: #fca311ff;
+        font-family: impact;
+        font-size: 20px;
+    }
+    #hsCont{
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #initials{
+        display: flex;
+        background-color: #e5e5e5ff;
+    }
+    
+    #hsInit{
+        display: flex;
+        font-family: bold;
+        font-size: 20px;
+    }
+    
+    #hsS{
+        display: flex;
+        font-family: bold;
+        font-size: 20px;
+    }
+    
+    #finalScore{
+        display: flex;
+        font-family: bold;
+        font-size: 20px;
+    }
+    
+    #endGameBtns{
+        display: none;
+    }

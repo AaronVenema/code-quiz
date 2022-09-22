@@ -10,42 +10,40 @@
 <header>
 </header>
 <body>
-    <div id="title"></div>
-        <h1 id="question"></h1>
-        <ul>
-            <li> 
-                <input type="radio" id="a" name="answers" class="answers">
-                <label for="a" id="a+"></label>
-            </li>
-            <li>
-                <input type="radio" id="b" name="answers" class="answers">
-                <label for="b" id="b+"></label>
-            </li>
-            <li>
-                <input type="radio" id="c" name="answers" class="answers">
-                <label for="c" id="c+"></label>
-            </li>
-            <li>
-                <input type="radio" id="d" name="answers" class="answers">
-                <label for="d" id="d+"></label>
-            </li>
-            <li>
-                <button class="btn" id="submit" value="submit">Submit</button>
-            </li>
-            <li>
-                <div class= "card timer">
-                    <div class = "timer-text">60</div>
-                    <div class="large-font timer-count"></div>
-                </div>
-            </li>
-        </ul>
-        
-    <section>
-        <h3>Directions</h3>
-            <div id="directions">
-                <p> click answer you think is correct, at end of quiz enter your intitals to save score.</p>
-            </div>
+    <div class="cont">
+        <div id="startPg">
+            <h1>Click start to begin!</h1>
+            <button id="startBtn">Start Quiz</button>
+            <button id="startPgHs" onclick="showHighscore()">High Scores</button>
+        </div>
     </section>
+    <div id="quiz">
+        <div id="timer">Time left: </div>
+            <div id="questions"><p>Questions</p></div>
+                <button id="a" onclick="checkAnswer('a')">A</button>
+                <button id="b" onclick="checkAnswer('b')">B</button>
+                <button id="c" onclick="checkAnswer('c')">C</button>
+                <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+    </div> 
+    <div id="gameover">
+        <div id="fS"></div>
+        <input type="text" size = "30" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+        <button id="submitScore">Submit Score</button>
+    </div>
+    <div id=hsCont>
+    <div id="hsPg">
+        <div id="hs-header">
+            <h2>Players Initials</h2>
+            <h2>Score</h2>
+            </div>
+            <div id = "hsInit"></div>
+            <div id = "hsS"></div>
+        </div>
+        <div id="endBtns">
+            <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+            <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+        </div>
 </body>
 <script src="./assets/script/script.js"></script>
 </html>
