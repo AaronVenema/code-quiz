@@ -8,7 +8,7 @@ $white: #ffffffff; */
 
 *{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
     height: auto;
     margin:0;
@@ -21,6 +21,8 @@ $white: #ffffffff; */
         font-size: 20px;
         color:#fca311ff;
         list-style-type: none;
+        display: block;
+        flex-direction: none;
     }
     
     p{
@@ -31,15 +33,17 @@ $white: #ffffffff; */
     
     }
     h2{
+        display: block;
         font-family: impact;
         font-size: 20px;
         color:#fca311ff;
+        flex-direction: none;
     }
     input{
         text-align: center;
     }
     
-    .container {
+    .cont {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,7 +110,7 @@ $white: #ffffffff; */
         height: 100%;
         width: 100%;
         display: none;
-        flex-direction: column;
+        flex-direction: none;
         align-items: center;
         justify-content: center;
     }
@@ -137,3 +141,5 @@ $white: #ffffffff; */
     #endGameBtns{
         display: none;
     }
+
+    
