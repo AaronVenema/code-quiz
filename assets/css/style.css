@@ -8,7 +8,7 @@ $white: #ffffffff; */
 
 *{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     height: auto;
     margin:0;
@@ -21,8 +21,6 @@ $white: #ffffffff; */
         font-size: 20px;
         color:#fca311ff;
         list-style-type: none;
-        display: block;
-        flex-direction: none;
     }
     
     p{
@@ -33,20 +31,19 @@ $white: #ffffffff; */
     
     }
     h2{
-        display: block;
         font-family: impact;
         font-size: 20px;
         color:#fca311ff;
-        flex-direction: none;
     }
     input{
         text-align: center;
     }
     
     .cont {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
+        width: 100%;
       }
     
       button {
@@ -110,14 +107,14 @@ $white: #ffffffff; */
         height: 100%;
         width: 100%;
         display: none;
-        flex-direction: none;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     
     #initials{
         display: flex;
-        background-color: #e5e5e5ff;
+        background-color: #fca311ff;
     }
     
     #hsInit{
@@ -141,5 +138,3 @@ $white: #ffffffff; */
     #endGameBtns{
         display: none;
     }
-
-    

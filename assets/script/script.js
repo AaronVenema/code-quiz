@@ -125,7 +125,7 @@ function showScore(){
 
 submitScoreBtn.addEventListener("click", function highscore(){    
   if(highscoreInputName.value === "") {
-      alert("Must provide initals");
+      alert("Must provide name");
       return false;
   }else{
       var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
@@ -136,7 +136,7 @@ submitScoreBtn.addEventListener("click", function highscore(){
       };
       gameoverDiv.style.display = "none";
       hsCont.style.display = "flex";
-      hsPg.style.display = "block";
+      hsPg.style.display = "flex";
       endBtns.style.display = "flex";
       savedHighscores.push(currentHighscore);
       localStorage.setItem("savedHighscores", JSON.stringify(savedHighscores));
@@ -161,7 +161,7 @@ function showHighscore(){
   startQuizDiv.style.display = "none"
   gameoverDiv.style.display = "none";
   hsCont.style.display = "flex";
-  hsPg.style.display = "block";
+  hsPg.style.display = "flex";
   endBtns.style.display = "flex";
 
   generateHighscores();
